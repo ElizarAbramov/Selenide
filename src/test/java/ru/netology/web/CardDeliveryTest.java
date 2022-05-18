@@ -36,6 +36,6 @@ public class CardDeliveryTest {
         $("[data-test-id='phone'] input").setValue("+79234556677");
         $("[class='checkbox__box']").click();
         $("[class='button__text']").click();
-        $(Selectors.withText("Встреча успешно")).shouldBe(visible, Duration.ofMillis(10000));
+        $(Selectors.withText("Встреча успешно")).shouldBe(hidden, Duration.ofMillis(10000));
     }
 }
