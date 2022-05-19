@@ -5,12 +5,13 @@ stack: jdk 11
 branches:
   only:
     - master
+    - selenide
 
 build: off
 
 install:
 
-  - java -jar ./artifacts/app-order.jar &
+  - java -jar ./artifacts/app-card-delivery.jar &
 
 build_script:
   - chmod +x gradlew
